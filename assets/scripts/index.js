@@ -1,10 +1,10 @@
 const emojis = ['😊', '😊', '😂', '😂', '😎', '😎', '😁', '😁', '🤣', '🤣', '😃', '😃', '😆', '😆', '👀', '👀']
-const Shuf_Emojis = emojis.sort(() => (Math.random() > 0.5) ? 2 : -1)
+const ShufEmojis = emojis.sort(() => (Math.random() > 0.5) ? 2 : -1)
 const message = document.querySelector('.cards')
 for (let i = 0; i < emojis.length; i++) {
   const box = document.createElement('div')
   box.className = 'item'
-  box.innerHTmL = Shuf_Emojis[i]
+  box.innerHTmL = ShufEmojis[i]
 
   box.onclick = function () {
     this.classList.add('boxopen')
