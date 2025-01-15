@@ -71,12 +71,12 @@ h1 {
   transition: 0.25s;
 }
 
-.item.boxOpen {
+.item.boxopen {
   transform: rotateY(0deg);
 }
 
 .item::after {
-  content: '';
+  content: "";
   position: absolute;
   inset: 0;
   background: burlywood;
@@ -87,6 +87,6 @@ h1 {
 }
 
 .boxOpen::after,
-.boxMatch::after {
+.boxmatch::after {
   transform: rotateY(180deg);
 }
