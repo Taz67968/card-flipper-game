@@ -71,7 +71,7 @@ h1 {
   transition: 0.25s;
 }
 
-.item.boxOpen {
+.item.boxopen {
   transform: rotateY(0deg);
 }
 
@@ -86,7 +86,7 @@ h1 {
   box-shadow: 10px 5px 5px black;
 }
 
-.boxOpen::after,
-.boxMatch::after {
+.boxopen::after,
+.boxmatch::after {
   transform: rotateY(180deg);
 }

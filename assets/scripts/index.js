@@ -7,22 +7,22 @@ for (let i = 0; i < emojis.length; i++) {
   box.innerHTML = shufEmojis[i]
 
   box.onclick = function () {
-    this.classList.add('boxOpen')
+    this.classList.add('boxopen')
     setTimeout(function () {
-      if (document.querySelectorAll('.boxOpen').length > 1) {
-        if (document.querySelectorAll('.boxOpen')[0].innerHTML === document.querySelectorAll('.boxOpen')[1].innerHTML) {
-          document.querySelectorAll('.boxOpen')[0].classList.add('boxMatch')
-          document.querySelectorAll('.boxOpen')[1].classList.add('boxMatch')
+      if (document.querySelectorAll('.boxopen').length > 1) {
+        if (document.querySelectorAll('.boxopen')[0].innerHTML === document.querySelectorAll('.boxopen')[1].innerHTML) {
+          document.querySelectorAll('.boxopen')[0].classList.add('boxmatch')
+          document.querySelectorAll('.boxopen')[1].classList.add('boxmatch')
 
-          document.querySelectorAll('.boxOpen')[1].classList.remove('boxOpen')
-          document.querySelectorAll('.boxOpen')[0].classList.remove('boxOpen')
+          document.querySelectorAll('.boxopen')[1].classList.remove('boxopen')
+          document.querySelectorAll('.boxopen')[0].classList.remove('boxopen')
 
-          if (document.querySelectorAll('.boxMatch').length === emojis.length) {
+          if (document.querySelectorAll('.boxmatch').length === emojis.length) {
             message.textContent = 'Congratulaitions🎈🎉 Winner thanks for playing'
           }
         } else {
-          document.querySelectorAll('.boxOpen')[1].classList.remove('boxOpen')
-          document.querySelectorAll('.boxOpen')[0].classList.remove('boxOpen')
+          document.querySelectorAll('.boxopen')[1].classList.remove('boxopen')
+          document.querySelectorAll('.boxopen')[0].classList.remove('boxopen')
         }
       }
     }, 500)
